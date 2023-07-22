@@ -8,6 +8,14 @@ composer install
 ```
 cp .env.example .env
 ```
+## Change ENV Values
+```
+APP_NAME=Laravel
+APP_ENV=local
+APP_KEY=base64:QUp4G06AMr/Es9QIeyLABblGlEA+sfJZ2BthobZowzg=
+APP_DEBUG=false
+APP_URL=http://127.0.0.1:8000
+```
 ## Import database
 ```
 import .sql to database  
