@@ -20,7 +20,6 @@ class Fullcalendar extends Tool
 
     public function __construct($usersData)
     {
-        // info(User::all());
         $this->usersData = $usersData;
     }
 
@@ -52,6 +51,6 @@ class Fullcalendar extends Tool
 
     public function renderNavigation()
     {
-        return view('my-custom-tool::navigation');
+        return view('fullcalendar::navigation');
     }
 }

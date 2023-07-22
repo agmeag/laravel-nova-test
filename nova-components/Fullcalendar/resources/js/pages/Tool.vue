@@ -52,7 +52,7 @@ export default {
 <template>
     <FullCalendar :options="calendarOptions">
         <template v-slot:eventContent="arg">
-            <i style="color: white; font-size: 15px;">{{ arg.event.title }}</i>
+            <i style="color: white; font-size: 12px; display: flex;">{{ arg.event.title }}</i>
         </template>
     </FullCalendar>
 </template>

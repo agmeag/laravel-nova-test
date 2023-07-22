@@ -70,7 +70,6 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     public function tools()
     {
         $usersData = User::all();
-        // info(User::all());
         return [
             (new Fullcalendar($usersData))->withUsersData($usersData),
         ];
