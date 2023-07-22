@@ -1,3 +1,48 @@
+# laravel-nova-test
+
+## Project setup
+```
+composer install
+```
+## Setup .env (Linux)
+```
+cp .env.example .env
+```
+## Setup database connection
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=findex_test
+DB_USERNAME=root
+DB_PASSWORD=
+```
+## Install dependencies
+```
+npm install
+```
+## Compile and build
+```
+npm run build (if public/build folder does not exist)
+```
+## Compile inner components if needed
+```
+cd nova-components/Fullcalendar (if dist folder does not exist)
+```
+```
+npm run prod (if Fullcalendar dist folder does not exist)
+```
+## Start server
+```
+php artisan serve
+```
+## Login on laravel nova
+```
+login as:
+user: admin@admin.com
+password: admin@admin.com
+```
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
