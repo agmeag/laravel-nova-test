@@ -8,6 +8,11 @@ composer install
 ```
 cp .env.example .env
 ```
+## Import database
+```
+import .sql to database  
+```
+
 ## Setup database connection
 ```
 DB_CONNECTION=mysql
