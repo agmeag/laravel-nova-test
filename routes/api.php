@@ -24,3 +24,5 @@ Route::get('/users', function () {
     $data = User::all(); // Replace this with your data
     return response()->json($data);
 });
+
+Route::get('/onboarding-texts', 'OnboardingController@index');

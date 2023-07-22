@@ -5,6 +5,7 @@ namespace App\Providers;
 use App\Models\User;
 use Fullcalendar\Fullcalendar\Fullcalendar;
 use Illuminate\Support\Facades\Gate;
+use Laravel\Nova\Events\ServingNova;
 use Laravel\Nova\Nova;
 use Laravel\Nova\NovaApplicationServiceProvider;
 use Laravel\Nova\Tool;
@@ -18,6 +19,9 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
      */
     public function boot()
     {
+        Nova::serving(function (ServingNova $event) {
+            Nova::script('onboarding', __DIR__ . '/resources/js/Onboarding.js'); // Update the path accordingly
+        });
         parent::boot();
     }
 
